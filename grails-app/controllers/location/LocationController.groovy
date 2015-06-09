@@ -29,6 +29,7 @@ class LocationController {
 
             render searchResults as JSON
             //render (text: xmlResponse, contentType:'text/xml')
+
         }
 
 
