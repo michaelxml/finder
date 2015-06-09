@@ -25,6 +25,7 @@ class LocationController {
             def searchResults = new SearchResults()
             searchResults.loadFromXML(webServiceResult)
 
+
             println searchResults.geoCodeQuality + ' ' + searchResults.alterRule + ' ' + searchResults.originatingLatitude + ' ' + searchResults.originatingLongitude + ' '
 
             render searchResults as JSON
