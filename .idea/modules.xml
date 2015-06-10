@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/finder.iml" filepath="$PROJECT_DIR$/finder.iml" />
       <module fileurl="file://$PROJECT_DIR$/finder-grailsPlugins.iml" filepath="$PROJECT_DIR$/finder-grailsPlugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/finder-grailsPlugins.iml" filepath="$PROJECT_DIR$/finder-grailsPlugins.iml" />
     </modules>
   </component>
 </project>
