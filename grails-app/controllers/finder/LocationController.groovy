@@ -1,9 +1,6 @@
-package location
+package finder
 
 import grails.converters.JSON
-import groovyx.net.http.Method
-
-import groovy.xml.*
 
 class LocationController {
 
@@ -312,8 +309,8 @@ class LocationController {
 </binding>
 <service name="ProximityWebServiceService">
 <port name="ProximityWebServicePort" binding="tns:ProximityWebServicePortBinding">
-<!--soap:address location="http://172.29.166.87:8100/fj/proximitywebservice"/-->
-<soap:address location="http://localhost:8080/findadentist/Dentist/proximityWebServiceResponse"/><!--location="http://ddmn-rhel-01.dev.deltamn.us:8080/findadentist/Dentist/proximityWebServiceResponse"/-->
+<!--soap:address finder="http://172.29.166.87:8100/fj/proximitywebservice"/-->
+<soap:address finder="http://localhost:8080/findadentist/Dentist/proximityWebServiceResponse"/><!--finder="http://ddmn-rhel-01.dev.deltamn.us:8080/findadentist/Dentist/proximityWebServiceResponse"/-->
 </port>
 </service>
 </definitions>'''
@@ -1347,7 +1344,7 @@ class LocationController {
                     city  :  'Minneapolis',
                     zip  :  '55438',
                     officeEmail  :  'provider2location1@gmail.com',
-                    urlText  :  'http://www.another-location.com',
+                    urlText  :  'http://www.another-finder.com',
                     telephoneNumber  :  '(999)888-7777',
                     publicTransAvailable  :  true,
                     officeServcDisableAdlt  :  true,
@@ -1368,7 +1365,7 @@ class LocationController {
                     city  :  'Minneapolis',
                     zip  :  '55438',
                     officeEmail  :  'provider3location1@gmail.com',
-                    urlText  :  'http://www.another-location.com',
+                    urlText  :  'http://www.another-finder.com',
                     telephoneNumber  :  '(888)999-6666',
                     publicTransAvailable  :  true,
                     officeServcDisableAdlt  :  true,
@@ -1389,7 +1386,7 @@ class LocationController {
                     city  :  'Minneapolis',
                     zip  :  '55438',
                     officeEmail  :  'provider3location1@gmail.com',
-                    urlText  :  'http://www.another-location.com',
+                    urlText  :  'http://www.another-finder.com',
                     telephoneNumber  :  '(888)999-6666',
                     publicTransAvailable  :  true,
                     officeServcDisableAdlt  :  true,
@@ -1429,7 +1426,7 @@ class LocationController {
                     city  :  'Minneapolis',
                     zip  :  '55438',
                     officeEmail  :  'provider3location1@gmail.com',
-                    urlText  :  'http://www.another-location.com',
+                    urlText  :  'http://www.another-finder.com',
                     telephoneNumber  :  '(888)999-6666',
                     publicTransAvailable  :  true,
                     officeServcDisableAdlt  :  true,
@@ -1449,7 +1446,7 @@ class LocationController {
                     city  :  'Minneapolis',
                     zip  :  '55438',
                     officeEmail  :  'provider3location1@gmail.com',
-                    urlText  :  'http://www.another-location.com',
+                    urlText  :  'http://www.another-finder.com',
                     telephoneNumber  :  '(888)999-6666',
                     publicTransAvailable  :  true,
                     officeServcDisableAdlt  :  true,
@@ -1469,7 +1466,7 @@ class LocationController {
                     city  :  'Minneapolis',
                     zip  :  '55438',
                     officeEmail  :  'provider3location1@gmail.com',
-                    urlText  :  'http://www.another-location.com',
+                    urlText  :  'http://www.another-finder.com',
                     telephoneNumber  :  '(888)999-6666',
                     publicTransAvailable  :  true,
                     officeServcDisableAdlt  :  true,

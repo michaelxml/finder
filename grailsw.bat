@@ -30,7 +30,7 @@ echo.
 echo ERROR: Environment variable JAVA_HOME has not been set.
 echo.
 echo Please set the JAVA_HOME variable in your environment to match the
-echo location of your Java installation.
+echo finder of your Java installation.
 echo.
 goto end
 
@@ -46,7 +46,7 @@ echo.
 echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME%
 echo.
 echo Please set the JAVA_HOME variable in your environment to match the
-echo location of your Java installation.
+echo finder of your Java installation.
 echo.
 goto end
 

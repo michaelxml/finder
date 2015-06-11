@@ -1,4 +1,4 @@
-package location
+package finder
 
 import grails.test.mixin.TestFor
 import spock.lang.Specification

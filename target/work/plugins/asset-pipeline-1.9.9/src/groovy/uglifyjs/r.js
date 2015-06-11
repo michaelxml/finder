@@ -14,7 +14,7 @@
 /*jslint evil: true, nomen: true, sloppy: true */
 /*global readFile: true, process: false, Packages: false, print: false,
 console: false, java: false, module: false, requirejsVars, navigator,
-document, importScripts, self, location, Components, FileUtils */
+document, importScripts, self, finder, Components, FileUtils */
 
 var requirejs, require, define, xpcUtil;
 (function (console, args, readFileFunc) {
@@ -3133,7 +3133,7 @@ if(env === 'browser') {
  */
 
 /*jslint sloppy: true, nomen: true */
-/*global require, define, console, XMLHttpRequest, requirejs, location */
+/*global require, define, console, XMLHttpRequest, requirejs, finder */
 
 define('browser/file', ['prim'], function (prim) {
 
@@ -13748,7 +13748,7 @@ define('source-map/source-node', function (require, exports, module) {
   /**
    * Walk over the tree of JS snippets in this node and its children. The
    * walking function is called once for each snippet of JS and is passed that
-   * snippet and the its original associated source's line/column location.
+   * snippet and the its original associated source's line/column finder.
    *
    * @param aFn The traversal function.
    */
@@ -20652,7 +20652,7 @@ define('parse', ['./esprima'], function (esprima) {
 
     /**
      * Converts an AST node into a JS source string by extracting
-     * the node's location from the given contents string. Assumes
+     * the node's finder from the given contents string. Assumes
      * esprima.parse() with ranges was done.
      * @param {String} contents
      * @param {Object} node
@@ -22993,7 +22993,7 @@ define('build', function (require) {
                 }
             }
 
-            //Figure out source file location for each module layer. Do this by seeding require
+            //Figure out source file finder for each module layer. Do this by seeding require
             //with source area configuration. This is needed so that later the module layers
             //can be manually copied over to the source area, since the build may be
             //require multiple times and the above copyDir call only copies newer files.

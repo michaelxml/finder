@@ -1,4 +1,4 @@
-package location
+package finder
 
 import grails.transaction.Transactional
 

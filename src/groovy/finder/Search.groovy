@@ -1,7 +1,6 @@
-package location
+package finder
 
 import groovy.xml.MarkupBuilder
-import groovyx.net.http.HTTPBuilder
 
 class Search {
     String address
